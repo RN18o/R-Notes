@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "start": "npm install  && npm install --prefix backend && npm run buid",
+    "start": "npm install  && npm install --prefix backend && npm run build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "both": "concurrently \"npm run dev\" \"nodemon backend/index.js\""
