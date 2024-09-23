@@ -23,7 +23,7 @@ app.use("/api/notes", require("./routes/notes"));
 const __dirname1 = path.resolve();
 console.log(__dirname1);
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname1, "/dist")));
+  app.use(express.static(path.join(__dirname1, "../dist")));
 
   // Rander frontend for any path
   app.get("*", (req, res) =>
