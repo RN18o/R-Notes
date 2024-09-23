@@ -9,6 +9,7 @@ const Login = (props) => {
     e.preventDefault();
     const response = await fetch(
       "https://r-notes-np7o.onrender.com/api/auth/login",
+      // "http://localhost:5000/api/auth/login",
       {
         method: "POST",
         headers: {
